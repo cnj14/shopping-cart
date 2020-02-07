@@ -28,7 +28,33 @@ while stop == 0:
         else:
             print("Error -- no product with ID: ", choice)
 
+items.sort()
+prices = []
 
+print("---------------------------")
+print("JAYSON CORNER STORE")
+print("Store #023: St. Pete Beach, FL")
+print("Tel: (727) 437-1233")
+print("www.jaysongrocery.com")
+print("---------------------------")
+print("CHECKOUT:", current_time)
+print("---------------------------")
+print("SELECTED PRODUCTS:")
+for item in items:
+    for index,row in products.iterrows():
+        if item == row["id"]:
+            print("...", row["name"], "(${0:.2f})".format(row["price"]))
+            prices.append(row["price"])
+print("---------------------------")
+subtotal = sum(prices)
+print("SUBTOTAL: ", "${0:.2f}".format(subtotal))
+tax = subtotal*(.0875)
+print("TAX: ", "${0:.2f}".format(tax))
+total = subtotal + tax
+print("TOTAL: ", "${0:.2f}".format(total))
+print("---------------------------")
+print("THANK YOU, COME AGAIN SOON!")
+print("---------------------------")
 
 
 
