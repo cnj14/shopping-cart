@@ -1,0 +1,17 @@
+----------------------------------
+----------------------------------
+JAYSON CORNER STORE
+Store #023: St. Pete Beach, FL
+Tel: (727) 437-1233
+www.jaysongrocery.com
+----------------------------------
+CHECKOUT:02-07-2020 12:24:34 AM
+----------------------------------
+SELECTED PRODUCTS:
+Chocolate Sandwich Cookies($3.50) 
+Smart Ones Classic Favorites Mini Rigatoni With Vodka Cream Sauce($6.99) 
+----------------------------------
+SUBTOTAL: $10.49
+TAX: $0.92
+TOTAL: $11.41
+Thank you for shopping with us!
