@@ -45,6 +45,8 @@ print("----------------------------------")
 print("CHECKOUT:", current_time)
 print("----------------------------------")
 print("SELECTED PRODUCTS:")
+# I learned about writing to files in COSC 010
+## In this program, it allowed me to complete the email portion
 nfile.write("----------------------------------\n")
 nfile.write("----------------------------------\n")
 nfile.write("JAYSON CORNER STORE\n")
