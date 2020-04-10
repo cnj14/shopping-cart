@@ -53,11 +53,10 @@ print("Welcome, user!")
 print("Type an integer between 1 and 20 to reference a product ID, \n or type 'DONE' when all items have been checked out.")
 
 items = []
-stop = 0
-while stop == 0:
+while True:
     choice = input("Please input a product identification number: ")
     if choice.upper() == "DONE":
-        stop += 1
+        break
     else:
         choice = int(choice)
         if choice in range(1,21):
