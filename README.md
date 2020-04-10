@@ -5,15 +5,19 @@ Welcome to the shopping cart project!
 
 Fork this repo on Github, clone it to your GH desktop, and navigate from your command line.
 
-```sh
-cd CJ-Macbook:shopping-cart
+Creating the setup environent:
+```py
+ conda create -n shopping-env python=3.7
+ conda activate shopping-env
+ ```
 
-Packages used in this project: 
- csv
- pandas
- os 
- datetime
- smtplib
+Installing requirements:
+```py
+ pip install pandas
+ pip install pytest
+ ```
 
-
-python shopping_cart.py
+Running the program:
+```py
+ python shopping_cart.py
+ ```
