@@ -26,21 +26,44 @@ products = [
 tax_rate = .0875
 
 def date_format(time):
+    """
+    Formats a datetime object as MM-DD-YYYY HH:MM:SS AM/PM
+    Example: date_format(datetime(2020, 4, 10, 15, 29, 00))
+    """
     return time.strftime("%m-%d-%Y %I:%M:%S %p")
 
 def to_usd(price):
+    """
+    Returns a numeric object in USD format.
+    Example: to_usd(5) or to_usd(41.2)
+    """
     return "${0:,.2f}".format(price)
 
 def get_subtotal(l):
+    """
+    Sums a list object. Used to calculate subtotal of a list of prices.
+    Example: get_subtotal([1,5,10])
+    """
     return sum(l)
 
 def get_tax(sub):
+    """
+    Applies tax rate to a numeric object using tax_rate = 0.0875
+    Example: get_tax(100)
+    """
     return sub*tax_rate
 
 def lines():
+    """
+    Aesthetic function to simplify code for receipt output.
+    """
     print("----------------------------------")
 
 def get_products(identifier):
+    """
+    Returns a dictionary element from products list based on its numeric identifier.
+    Example: get_products(5)
+    """
     for elm in products:
         if identifier == elm["id"]:
             return elm
