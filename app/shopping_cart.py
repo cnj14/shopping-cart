@@ -53,16 +53,17 @@ print("Welcome, user!")
 print("Type an integer between 1 and 20 to reference a product ID, \n or type 'DONE' when all items have been checked out.")
 
 items = []
-while True:
-    choice = input("Please input a product identification number: ")
-    if choice.upper() == "DONE":
-        break
-    else:
-        choice = int(choice)
-        if choice in range(1,21):
-            items.append(choice)
+if __name__ == "__main__": 
+    while True:
+        choice = input("Please input a product identification number: ")
+        if choice.upper() == "DONE":
+            break
         else:
-            print("Error -- no product with ID", choice,"-- Please try again!")
+            choice = int(choice)
+            if choice in range(1,21):
+                items.append(choice)
+            else:
+                print("Error -- no product with ID", choice,"-- Please try again!")
 items.sort()
 prices = []
 
