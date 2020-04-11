@@ -1,5 +1,6 @@
 # shopping-cart
 
+[![Build Status](https://travis-ci.com/cnj14/shopping-cart.svg?branch=master)](https://travis-ci.com/cnj14/shopping-cart)
 
 Welcome to the shopping cart project!
 
