@@ -21,3 +21,8 @@ Running the program:
 ```py
  python shopping_cart.py
  ```
+
+Testing the program:
+```py
+pytest
+```
